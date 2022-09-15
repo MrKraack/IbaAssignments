@@ -9,19 +9,16 @@ let dice6 = 0;
 
 
 function startOpgave8(){
-    let diceFromUser = Number(prompt("How many times, should the dice be thrown?"));
-    
+    let diceFromUser = Number(prompt("How many times, should the dice be thrown?"));   
 
     for (let i = 0; i < diceFromUser; i++) {
         let currentHit = ThrowDice();
         switch (currentHit) {
             case 1:
                 dice1++;
-                break;
-        
+                break;        
             case 2:
-                dice2++;
-                
+                dice2++;                
                 break;
         
             case 3:

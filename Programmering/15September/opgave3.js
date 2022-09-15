@@ -6,8 +6,17 @@ function printHuman(){
         fornavn: "Bruce",
         efternavn: "Lee",
         alder: 42,
-        eyeColor: "brown"
+        eyeColor: "brown",
+        sayHi: function(msg){
+            console.log(msg);
+        },
+        introduce: function(){
+            console.log(this.fornavn);
+        }
     }
     
     console.log(`${randomPerson.fornavn} ${randomPerson.efternavn} er ${randomPerson.alder} år gammel og har ${randomPerson.eyeColor} øjne`);
+    randomPerson.sayHi("Hello world");
+    randomPerson.introduce();
+
 }

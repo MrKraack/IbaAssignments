@@ -8,25 +8,25 @@ var objectArray = [];
 
 //create the objects
 let greetObject1 = {
-    name: "Object1",
+    name: "Naruto",
     greeting: "Konnichiwa",
     sayHi: function(){
-        console.log(this.greeting);
+        console.log(`${this.greeting} watashi no wa ${this.name}`);
     },
 }
 
 let greetObject2 = {
-    name: "Object2",
+    name: "James",
     greeting: "Well Hello there",
     sayHi: function(){
-        console.log(this.greeting);
+        console.log(`${this.greeting} my name is ${this.name}`);
     },
 }
 let greetObject3 = {
-    name: "Object1",
-    greeting: "Ni hao",
+    name: "Wing Zhao",
+    greeting: "Nǐ hǎo",
     sayHi: function(){
-        console.log(this.greeting);
+        console.log(`${this.greeting} wǒ de míngzì shì ${this.name}`);
     },
 }
 
@@ -37,5 +37,6 @@ let greetObject3 = {
     for (let i = 0; i < objectArray.length; i++) {
         objectArray[i].sayHi();        
     }
+    
 }
 

@@ -1,0 +1,41 @@
+//Assignment 1 - Array with 3 objects. Each object has a greeting. Write to log
+
+//Get button element
+btn1El = document.getElementById('opg1Btn').addEventListener('click', startOpgave1)
+
+function startOpgave1(){
+var objectArray = [];
+
+//create the objects
+let greetObject1 = {
+    name: "Object1",
+    greeting: "Konnichiwa",
+    sayHi: function(){
+        console.log(this.greeting);
+    },
+}
+
+let greetObject2 = {
+    name: "Object2",
+    greeting: "Well Hello there",
+    sayHi: function(){
+        console.log(this.greeting);
+    },
+}
+let greetObject3 = {
+    name: "Object1",
+    greeting: "Ni hao",
+    sayHi: function(){
+        console.log(this.greeting);
+    },
+}
+
+    //Push the objects into the array
+    objectArray.push(greetObject1,greetObject2,greetObject3);
+
+    //Loop through every objects
+    for (let i = 0; i < objectArray.length; i++) {
+        objectArray[i].sayHi();        
+    }
+}
+

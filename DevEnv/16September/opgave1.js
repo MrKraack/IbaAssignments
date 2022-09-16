@@ -8,7 +8,7 @@ var objectArray = [];
 
 //create the objects
 let greetObject1 = {
-    name: "Naruto",
+    name: "Kakashi Hatake",
     greeting: "Konnichiwa",
     sayHi: function(){
         console.log(`${this.greeting} watashi no wa ${this.name}`);

@@ -1,0 +1,28 @@
+//Easy user input
+var prompt = require(`prompt-sync`)();
+
+//Try to use UglifyJS
+var UglifyJS = require("uglify-js");
+
+//Try to use Beautify
+var beautify = require("beautify");
+
+var numberToGuess = Math.round(Math.random()*100);
+
+function guessNumber(){
+    var question = prompt(`Guess a number: `);
+    // Check user answer
+    if (question == numberToGuess) {
+        console.log("Damn, you guessed it");
+        
+    } else if(question < numberToGuess ){ 
+        console.log(`Sorry man, too small`);
+        guessNumber();
+        
+    }else if(question > numberToGuess){
+        console.log("Too big");
+        guessNumber();
+
+    }
+}//Load function when code is initiated.
+guessNumber();

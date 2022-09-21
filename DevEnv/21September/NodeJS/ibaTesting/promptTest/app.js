@@ -1,5 +1,9 @@
 var prompt = require(`prompt-sync`)();
 
+//Try to use UglifyJS
+var UglifyJS = require("uglify-js");
+
+
 var numberToGuess = Math.round(Math.random()*100);
 
 function guessNumber(){

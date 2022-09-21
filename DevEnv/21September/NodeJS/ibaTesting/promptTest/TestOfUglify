@@ -1,0 +1,20 @@
+var prompt = require(`prompt-sync`)();
+
+var UglifyJS = require("uglify-js");
+
+var numberToGuess = Math.round(Math.random() * 100);
+
+function guessNumber() {
+    var question = prompt(`Guess a number: `);
+    if (question == numberToGuess) {
+        console.log("Damn, you guessed it");
+    } else if (question < numberToGuess) {
+        console.log(`Sorry man, too small`);
+        guessNumber();
+    } else if (question > numberToGuess) {
+        console.log("Too big");
+        guessNumber();
+    }
+}
+
+guessNumber();

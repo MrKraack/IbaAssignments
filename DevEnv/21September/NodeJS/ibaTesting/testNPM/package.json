@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "beautify": "^0.0.8",
+    "prompt-sync": "^4.2.0",
+    "uglify-js": "^3.17.1",
+    "uglifyjs": "^2.4.11"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.1"
+  }
+}

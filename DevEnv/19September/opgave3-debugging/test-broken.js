@@ -10,9 +10,8 @@ const logCombo = (str) => {
   //Changed i+2 to and i,j to 0 from 1
   for(let i = 0; i < str.length; i++){
     for(let j = 0; j < str.length; j++) {   
-      // newLi = document.createElement('li').innerHTML = str[i-1] + str[j-1];
 
-      newLi = document.createElement('li');
+      let newLi = document.createElement('li');
       //removed -1
       newLi.innerHTML = str[i] + str[j];
 
